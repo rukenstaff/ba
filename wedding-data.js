@@ -92,7 +92,7 @@ window.WEDDING_DATA = {
       "connect": "پەیوەندیێ دگەل تیمێ بکە",
       "phone": "ژمارە",
       "staffLink": "بەرەڤ پەڕا Ruken Staff",
-      "share": "بانگهێشتێ پارڤە بکە",
+      "share": "بانگهێشتێ شەیر بکە",
       "shareText": "تە هاتیە بانگهێشتکرن بۆ خازگینی و نیشانی B&A.",
       "musicOn": "دەنگ لێ",
       "musicOff": "دەنگ نەهاتیە لێدان",
@@ -165,6 +165,6 @@ window.WEDDING_DATA = {
       "0750 954 25 66",
       "0750 199 99 85"
     ],
-    "pageUrl": "ruken-staff/index.html"
+    "pageUrl": "https://rukenstaff.github.io/"
   }
 };

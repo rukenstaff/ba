@@ -200,6 +200,13 @@ function playMusic() {
 function openInvitation() {
   if (opened) return;
   opened = true;
+  const root = document.documentElement;
+  const previousScrollBehavior = root.style.scrollBehavior;
+  document.body.classList.remove('is-locked');
+  root.style.scrollBehavior = 'auto';
+  window.scrollTo(0, 0);
+  root.style.scrollBehavior = previousScrollBehavior;
+  document.body.classList.add('is-locked');
   playMusic();
   opening.classList.add('is-opening');
   openButton.disabled = true;
@@ -209,7 +216,6 @@ function openInvitation() {
     site.inert = false;
     document.body.classList.remove('is-locked');
     opening.classList.add('is-dismissed');
-    window.scrollTo(0, 0);
     updateMusicControl();
     window.setTimeout(() => opening.remove(), reducedMotion.matches ? 50 : 950);
   }, delay);
